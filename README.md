@@ -30,7 +30,7 @@ Choose more than one genre at a time
 - Home page
 - Results page 
 
-##Routes
+## Routes
 - GET /home 
 - POST /home/genre
 - GET /results
