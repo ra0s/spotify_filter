@@ -54,15 +54,32 @@ h2{
 }
 
 .submit{
-  background-color: teal;
+  background-color: white;
   margin: 0 10px;
+}
+
+#submitIcon{
+  color: black;
+}
+
+#submitIcon:hover{
+  color: white;
 }
 
 #popularity{
   background-color: #008080;
+  transition: 200ms;
+}
 
+#popularity:hover{
+  background-color: #009696;
 }
 
 #genre{
   background-color: #3b3b3b;
+  transition: 200ms;
+}
+
+#genre:hover{
+  background-color: #5b5b5b;
 }
