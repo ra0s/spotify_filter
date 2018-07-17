@@ -1,10 +1,70 @@
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  padding: 20px;
+  background-image: url("../images/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
-a {
-  color: #00B7FF;
+.logo{
+  font-size: 2rem;
+  margin-top: 20px;
+  margin-right: 10px;
+  color: white;
+}
+
+.first-section{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.second-section{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 100px;
+}
+
+.third-section{
+  display: flex;
+  align-items: center;
+  margin-top: 80px;
+  justify-content: center;
+}
+
+h1{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2em;
+  color: white;
+  font-weight: bold;
+}
+
+h2{
+  font-family: 'Indie Flower', cursive;
+  font-size: 5em;
+  color: white;
+  font-weight: bold;
+}
+
+.buttonStyle{
+  width: 300px;
+  border-radius: 10px;
+  margin: 0 10px;
+}
+
+.submit{
+  background-color: teal;
+  margin: 0 10px;
+}
+
+#popularity{
+  background-color: #008080;
+
+}
+
+#genre{
+  background-color: #3b3b3b;
 }
 
 h1 {
