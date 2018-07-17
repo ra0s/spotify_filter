@@ -2,9 +2,34 @@
 <html>
   <head>
     <title>{{title}}</title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
+
+    <!-- Compiled and minified CSS -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+
+     <!-- Compiled and minified JavaScript -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+
+     <!-- Google Fonts -->
+     <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Montserrat" rel="stylesheet">
+
+    <!-- Icons -->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+      <link rel='stylesheet' href='/stylesheets/style.css' />
+
   </head>
   <body>
     {{{body}}}
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" type="text/javascript">
+
+      // document.addEventListener('DOMContentLoaded', function() {
+      //   var elems = document.querySelectorAll('.dropdown-trigger');
+      //   var instances = M.Dropdown.init(elems, options);
+      // });
+      $('.dropdown-trigger').dropdown();
+
+    </script>
+
   </body>
 </html>
