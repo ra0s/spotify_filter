@@ -6,3 +6,17 @@ body {
 a {
   color: #00B7FF;
 }
+
+h1 {
+  text-align: center;
+
+}
+
+img {
+  width: 250px;
+  length: 250px;
+}
+
+.buttoncolor {
+  color: #008080;
+}
