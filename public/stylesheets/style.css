@@ -91,6 +91,7 @@ img {
 
 }
 
+<<<<<<< HEAD
 #card-track{
   z-index: 10;
 }
@@ -112,5 +113,68 @@ img {
 }
 
 .list-icon-color{
+=======
+.submit{
+  background-color: white;
+  margin: 0 10px;
+}
+
+#submitIcon{
+  color: black;
+}
+
+#submitIcon:hover{
+  color: white;
+}
+
+#popularity{
+  background-color: #008080;
+  transition: 200ms;
+}
+
+#popularity:hover{
+  background-color: #009696;
+}
+
+#genre{
+  background-color: #3b3b3b;
+  transition: 200ms;
+}
+
+#genre:hover{
+  background-color: #5b5b5b;
+}
+
+.dropdown{
+  color: white;
+
+  background-color: #008080;
+  border: #008080;
+  width: 300px;
+  height: 50px;
+}
+
+select {
+  display: flex;
+}
+
+h1 {
+  text-align: center;
+
+}
+.submit:hover{
+  background-color: #008080;
+}
+
+.genreForm {
+  display: flex;
+
+img {
+  width: 250px;
+  length: 250px;
+}
+
+.buttoncolor {
+>>>>>>> master
   color: #008080;
 }

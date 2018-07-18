@@ -1,4 +1,5 @@
 
+<<<<<<< HEAD
 const imageChanged = document.getElementById("cover-art");
 const imageEnlarged = document.getElementById("cover-art2");
 
@@ -17,4 +18,15 @@ const cardRejectTwo = document.getElementById("card-track2");
     // imageChanged.classList.add("scale-out");
     cardReject.classList.add("scale-out");
     
+=======
+
+  function myFunction() {
+      document.getElementById("demo").style.color = "red";
+  }
+
+  function changeImage(){
+    document.getElementById("cover-art").style.opacity="0.2";
+    document.getElementById("cover-art").transition="200ms";
+
+>>>>>>> master
   }
