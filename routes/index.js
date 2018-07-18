@@ -8,6 +8,9 @@ router.get('/', function(req, res, next) {
   res.render('index');
 });
 
+router.get('/results', function(req, res, next){
+  res.render('results');
+});
 router.get('/categories', function(req, res){
   console.log(req.query.categories)
   // req.query.categories;
