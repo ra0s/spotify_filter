@@ -13,8 +13,11 @@ router.get('/results', function(req, res, next){
 });
 router.get('/categories', function(req, res){
   console.log(req.query.categories)
-  spotify.spotifyApi.searchCategory(req.query.categories);
-  res.redirect('/')
+  spotify.spotifyApi.searchCategory(req.query.categories)
+  .then(function(result) {
+    console.log(result); 
+    res.redirect('/')
+  } )
 })
 
 module.exports = router;
