@@ -7,32 +7,104 @@
 
   <header>
     <div class="row">
-   <div class="col s12 black">
-     <div class="first-section">
-    <i class="white material-icons logo">play_circle_outline</i>
-    <h1 class="white-text">Spotify Filter</h1>
-  </div>
-   </div>
- </div>
-  </header>
-  <div class="col s12 grey lighten-4">
-    <div class="row">
-      <div class="col-12">
-        <h1>This is working</h1>
-        <p id="demo" onclick="myFunction()">Click me to change my text color.</p>
-
+      <div class="col s12 black">
+        <div class="first-section">
+          <i class="material-icons logo">play_circle_outline</i>
+          <h1 class="white-text">Spotify Filter</h1>
+        </div>
       </div>
     </div>
+  </header>
+
+<!--  BODY -->
+  <div class="grey lighten-4 second-section">
     <div class="row">
-      <div class="col-6">
-      <img src="images/sample.jpg" id="cover-art" onClick="changeImage()">
-    </div>
-    </div>
-    <div class="row">
-      <div class="col-6">
-      <button name="accept" onclick="myFunction()" id="button-accept" class="buttoncolor">Accept</button>
-      <button name="reject" id="button-reject" onClick="changeImage()">Reject</button>
-    </div>
-    </div>
+
+        <div class="col s8 center left-column">
+          <!-- <h4>The Coast | Shipwreck</h4>
+          <h1>Songs like water</h1> -->
+          <!-- <div class="stackedCards">
+            <ul>
+              <! <li><img src="images/sample2.jpg" id="cover-art2" class= "scale-transition scale-out z-depth-2"></li> -->
+              <!-- <li><img src="images/sample.jpg" id="cover-art" class= "scale-transition hoverable z-depth-2"><li>
+
+            </ul>
+          </div> -->
+          <!-- <div class="row">
+              <div class="col s12 m6 center"> -->
+                <div class="card scale-transition z-depth-2" id="card-track">
+                  <div class="card-image">
+                    <img src="images/sample.jpg" id="cover-art" class= "scale-transition hoverable">
+                  </div>
+                  <div class="card-content">
+
+                    <iframe src="https://open.spotify.com/embed?uri=spotify:track:2NDZ6i6UfOUSKgFiTQKbnv" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media" class="songPlayer"></iframe>
+
+                  <!-- <h4 class="card-title">Card Title</h4>
+                    <p>Artist | Album</p> -->
+                  </div>
+                </div>
+
+                <div class="card center scale-transition z-depth-2" id="card-track2">
+                  <div class="card-image">
+                    <img src="images/sample2.jpg" id="cover-art2" class= "scale-transition hoverable">
+                  </div>
+                  <div class="card-content">
+                  <iframe src="https://open.spotify.com/embed?uri=spotify:track:7FcN74qp11KkNO0Xd7WMxU" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media" class="songPlayer"></iframe>
+                  </div>
+                </div>
+              <!-- </div>
+            </div> -->
+
+      <div class="row">
+        <div class="col s12 center buttonStyles">
+
+          <a id="rejectButton" class="btn-floating btn-large waves-effect waves-light grey" onClick="rejectImage()"><i class="material-icons">close</i></a>
+          <a id="acceptButton" class="btn-floating btn-large waves-effect waves-light teal" onClick="acceptImage()"><i class="material-icons">check</i></a>
+
+        </div>
+        </div>
+</div>
+
+        <div class="col s4">
+          <ul class="collection">
+            <li class="collection-item avatar list-header">
+              <h1>Music you like</h1>
+            </li>
+            <li class="collection-item avatar">
+              <img src="images/yuna.jpg" alt="" class="circle">
+              <i class="material-icons circle">music_note</i>
+              <span class="title">Track Name</span>
+              <p>Artist <br>
+                Album
+              </p>
+            </li>
+            <li class="collection-item avatar">
+              <img src="images/yuna.jpg" alt="" class="circle">
+              <i class="material-icons circle">music_note</i>
+              <span class="title">Track Name</span>
+              <p>Artist <br>
+                Album
+              </p>
+            </li>
+            <li class="collection-item avatar">
+              <img src="images/yuna.jpg" alt="" class="circle">
+              <i class="material-icons circle">music_note</i>
+              <span class="title">Track Name</span>
+              <p>Artist <br>
+                Album
+              </p>
+            </li>
+            <li class="collection-item avatar">
+              <img src="images/yuna.jpg" alt="" class="circle">
+              <i class="material-icons circle">music_note</i>
+              <span class="title">Track Name</span>
+              <p>Artist <br>
+                Album
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
 
 </body>

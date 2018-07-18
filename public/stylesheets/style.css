@@ -1,5 +1,4 @@
 body {
-
   font:  "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
@@ -9,15 +8,41 @@ a {
 
 h1 {
   font-family: 'Montserrat', sans-serif;
-  font-size: 2em;
-  color: white;
+  font-size: 2rem;
+  color: grey;
   font-weight: bold;
+}
 
+.second-section h1 {
+  margin-top: 5px;
+  margin-bottom: 30px;
 }
 
 img {
   width: 250px;
   length: 250px;
+}
+
+.card {
+  width: 300px;
+  length: 300px;
+  margin-top: 30px;
+  align-items: center;
+  position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+
+.card .card-content{
+  padding: 0px;
+  padding-bottom: 5px;
+}
+.logo{
+  font-size: 2rem;
+  margin-top: 20px;
+  margin-right: 10px;
+  color: white;
 }
 
 .buttoncolor {
@@ -26,11 +51,58 @@ img {
 
 .header {
   color: #008080;
-  margin: 0px;
 }
 
 .first-section{
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.left-column{
+  position: relative;
+  height: 700px;
+}
+
+.stackedCards {
+  position: relative;
+}
+
+.btn-large {
+  margin: 15px;
+}
+
+.row {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.buttonStyles{
+  position: absolute;
+    bottom: 170px;
+
+}
+
+#card-track{
+  z-index: 10;
+}
+
+#card-track2{
+  z-index: 5;
+}
+
+.songPlayer{
+  margin-top: 2px;
+}
+
+.card-content{
+  background-color: black;
+}
+
+.collection{
+  margin-top: 30px;
+}
+
+.list-icon-color{
+  color: #008080;
 }
