@@ -13,23 +13,16 @@ h1 {
   font-weight: bold;
 }
 
-#card-track{
-  z-index: 15;
-}
-
-#card-track2{
-  z-index: 14;
-}
-
 .second-section{
   margin-top: 5px;
   margin-bottom: 30px;
   display: flex;
-  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .cardsDisplay{
   display: flex;
+  flex-wrap: wrap;
 }
 
 img {
@@ -49,6 +42,7 @@ img {
 .card-panel{
   width: 350px;
   margin-top: 30px;
+  margin-left: 4px;
 
   /* position: absolute;
     left: 50%;
