@@ -1,7 +1,11 @@
+<div class="first-section">
     <i class="material-icons logo">play_circle_outline</i>
     <h1>Spotify Filter</h1>
+</div>
 
+<div class="second-section">
     <h2>Let's Dance</h2>
+</div>
 
 <div class="row">
 <<<<<<< HEAD
@@ -9,6 +13,9 @@
     <a class='dropdown-trigger btn-large waves-effect buttonStyle' id="popularity" href='#' data-target='dropdown1'>Popularity</a>
 =======
 >>>>>>> e6a903190712de9fdd8c06170d07b48b727b2928
+
+    <!-- popularity button -->
+    <a class='dropdown-trigger btn btn-large waves-effect buttonStyle' id="popularity" href='#' data-target='dropdown1'>Popularity</a>
 
     <ul id='dropdown1' class='dropdown-content'>
       <li><a href="#!">one</a></li>
@@ -18,6 +25,38 @@
       <li><a href="#!"><i class="material-icons">view_module</i>four</a></li>
       <li><a href="#!"><i class="material-icons">cloud</i>five</a></li>
     </ul>
+
+    <!-- genre button -->
+    <form action="/categories" method="GET">
+        <select name="categories" id="inputCategories">
+            <option value="Blues">Blues</option>
+            <option value="Christian">Christian</option>
+            <option value="Classical">Classical</option>
+            <option value="Comedy">Comedy</option>
+            <option value="Country">Country</option>
+            <option value="Dance/Electronic">EDM</option>
+            <option value="Desi">Desi</option>
+            <option value="Folk & optioncoustic">Folk & Acoustic</option>
+            <option value="Funk">Funk</option>
+            <option value="Hip-Hop">Hip-Hop</option>
+            <option value="Indie">Indie</option>
+            <option value="Jazz">Jazz</option>
+            <option value="K-Pop">K-Pop</option>
+            <option value="Latin">Latin</option>
+            <option value="Metal">Metal</option>
+            <option value="Pop">Pop</option>
+            <option value="Punk">Punk</option>
+            <option value="R&B">R&B</option>
+            <option value="Reggae">Reggae</option>
+            <option value="Rock">Rock</option>
+            <option value="Soul">Soul</option>
+        </select>
+        <input type="submit" />
+    </form>
+
+<form class="" action="/categories" method="GET">
+
+</form>
 
     <a class='dropdown-trigger btn-large buttonStyle' href='#' id="genre" data-target='dropdown1'>Genre</a>
 
@@ -30,6 +69,8 @@
       <li><a href="#!"><i class="material-icons">cloud</i>five</a></li>
     </ul>
 
+
+    <!-- submit button -->
     <a class="btn-floating btn-large waves-effect waves-light submit"><i class="material-icons" id="submitIcon">arrow_forward</i></a>
   </div>
 </div>
