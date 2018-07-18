@@ -86,6 +86,10 @@ h2{
 
 .dropdown{
   color: white;
+  background-color: #008080;
+  border: #008080;
+  width: 300px;
+  height: 50px;
 }
 
 select {
@@ -96,12 +100,10 @@ h1 {
   text-align: center;
 
 }
-
-img {
-  width: 250px;
-  length: 250px;
+.submit:hover{
+  background-color: #008080;
 }
 
-.buttoncolor {
-  color: #008080;
+.genreForm {
+  display: flex;
 }

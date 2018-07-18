@@ -16,6 +16,15 @@ router.get('/categories', function(req, res){
   // req.query.categories;
   spotify.data.searchCategory(req.query.categories);
   res.redirect('/')
-})
+});
+
+// CountTo100(){
+//   let numbers[100];
+//   for (let i = 0; i < 100; i++) {
+//     let n = 1;
+//     numbers[i] = n;
+//     n++;
+//   }
+// }
 
 module.exports = router;
