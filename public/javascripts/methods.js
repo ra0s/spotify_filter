@@ -31,7 +31,6 @@ spotifyApi.searchCategory = (category) => {
             data.body.tracks.items.forEach( (data)=> {
                 tracklist.push(new Track(data.album.name))
             })
-            console.log(tracklist)
             return tracklist;
         })
         .catch((err) =>{
