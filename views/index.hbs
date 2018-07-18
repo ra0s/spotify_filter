@@ -10,8 +10,7 @@
 <div class="row">
   <div class="col s12 third-section">
     <!-- popularity button -->
-    <a class='dropdown-trigger btn btn-large waves-effect buttonStyle' id="popularity" href='#' data-target='dropdown2'>Popularity</a>
-
+    <!-- <a class='dropdown-trigger btn btn-large waves-effect buttonStyle' id="popularity" href='#' data-target='dropdown2'>Popularity</a>
     <ul id='dropdown2' class='dropdown-content'>
       <li><a href="#!">Try Page</a></li>
       <li><a href="#!">two</a></li>
@@ -19,7 +18,8 @@
       <li><a href="#!">three</a></li>
       <li><a href="#!"><i class="material-icons">view_module</i>four</a></li>
       <li><a href="#!"><i class="material-icons">cloud</i>five</a></li>
-    </ul>
+    </ul> -->
+
 
     <!-- <div class="input-field col s12">
       <select class="dropdown">
@@ -31,8 +31,38 @@
       <label>Materialize Select</label>
     </div> -->
 
+    <!-- genre new button -->
+    <form class="genreForm" action="/categories" method="GET">
+        <select class="dropdown" name="categories" id="inputCategories">
+            <option class="dropdown"value="" disabled selected>Choose your genre</option>
+            <option value="Blues">Blues</option>
+            <option value="Christian">Christian</option>
+            <option value="Classical">Classical</option>
+            <option value="Comedy">Comedy</option>
+            <option value="Country">Country</option>
+            <option value="Dance/Electronic">EDM</option>
+            <option value="Desi">Desi</option>
+            <option value="Folk & optioncoustic">Folk & Acoustic</option>
+            <option value="Funk">Funk</option>
+            <option value="Hip-Hop">Hip-Hop</option>
+            <option value="Indie">Indie</option>
+            <option value="Jazz">Jazz</option>
+            <option value="K-Pop">K-Pop</option>
+            <option value="Latin">Latin</option>
+            <option value="Metal">Metal</option>
+            <option value="Pop">Pop</option>
+            <option value="Punk">Punk</option>
+            <option value="R&B">R&B</option>
+            <option value="Reggae">Reggae</option>
+            <option value="Rock">Rock</option>
+            <option value="Soul">Soul</option>
+        </select>
+        <!-- submit button -->
+        <button class="btn-floating btn-large waves-effect waves-light submit" type="submit" name="button"><i class="material-icons" id="submitIcon">arrow_forward</i></button>
+    </form>
+
     <!-- genre button -->
-  <ul id='dropdown1' class='dropdown-content'>
+  <!-- <ul id='dropdown1' class='dropdown-content'>
     <li class="optionDropDown" value="Blues">Blues</li>
     <li class="optionDropDown" value="Christian">Christian</li>
     <li class="optionDropDown" value="Classical">Classical</li>
@@ -48,40 +78,10 @@
     <li><a href="#!"><i class="material-icons">cloud</i>five</a></li>
   </ul>
 
-  <button class="dropdown-trigger btn-large buttonStyle" id="genre" data-target='dropdown1'>Genre</button>
+  <button class="dropdown-trigger btn-large buttonStyle" id="genre" data-target='dropdown1'>Genre</button> -->
 
     <!-- <a class='dropdown-trigger btn-large buttonStyle' href='#' id="genre" data-target='dropdown1'>Genre</a> -->
 
 
-    <!-- submit button -->
-    <a class="btn-floating btn-large waves-effect waves-light submit" href="#!"><i class="material-icons" id="submitIcon">arrow_forward</i></a>
   </div>
 </div>
-
-
-<form action="/categories" method="GET">
-    <select name="categories" id="inputCategories">
-        <option value="Blues">Blues</option>
-        <option value="Christian">Christian</option>
-        <option value="Classical">Classical</option>
-        <option value="Comedy">Comedy</option>
-        <option value="Country">Country</option>
-        <option value="Dance/Electronic">EDM</option>
-        <option value="Desi">Desi</option>
-        <option value="Folk & optioncoustic">Folk & Acoustic</option>
-        <option value="Funk">Funk</option>
-        <option value="Hip-Hop">Hip-Hop</option>
-        <option value="Indie">Indie</option>
-        <option value="Jazz">Jazz</option>
-        <option value="K-Pop">K-Pop</option>
-        <option value="Latin">Latin</option>
-        <option value="Metal">Metal</option>
-        <option value="Pop">Pop</option>
-        <option value="Punk">Punk</option>
-        <option value="R&B">R&B</option>
-        <option value="Reggae">Reggae</option>
-        <option value="Rock">Rock</option>
-        <option value="Soul">Soul</option>
-    </select>
-    <input type="submit" />
-</form>  
