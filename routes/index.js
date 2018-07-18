@@ -16,13 +16,8 @@ router.get('/categories', function(req, res){
   console.log(req.query.categories)
   spotify.spotifyApi.searchCategory(req.query.categories)
   .then(function(result) {
-<<<<<<< HEAD
-    console.log(result);
+    console.log("THIS IS THE TRACKLIST\n" + result);
     res.render('results', {tracklist: result} )
-=======
-    console.log(result); 
-    res.render('/results');
->>>>>>> sid
   } )
 })
 
