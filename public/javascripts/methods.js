@@ -25,11 +25,14 @@ spotifyApi.initCredential = function() {
 
 spotifyApi.searchCategory = (category) => {
     const tracklist = [];
+<<<<<<< HEAD
     return spotifyApi.searchTracks('genre:' + category, {limit: 5})
+=======
+    return spotifyApi.searchTracks('genre:' + category, {limit: 50})
+>>>>>>> sid
         .then((data) => {
             console.log('Search tracks by ' + data + ' in the artist name', data.body.tracks.items[0].album.name);
             data.body.tracks.items.forEach( (data)=> {
-                tracklist.push(new Track(data.album.name))
             })
             return tracklist;
         })
