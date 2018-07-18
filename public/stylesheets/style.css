@@ -87,3 +87,7 @@ h2{
 .dropdown{
   color: white;
 }
+
+select {
+  display: flex;
+}
