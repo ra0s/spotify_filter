@@ -4,7 +4,7 @@ const spotify = require('../public/javascripts/methods');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  spotify.data.initCredential();
+  spotify.spotifyApi.initCredential();
   res.render('index');
 });
 
@@ -13,8 +13,7 @@ router.get('/results', function(req, res, next){
 });
 router.get('/categories', function(req, res){
   console.log(req.query.categories)
-  // req.query.categories;
-  spotify.data.searchCategory(req.query.categories);
+  spotify.spotifyApi.searchCategory(req.query.categories);
   res.redirect('/')
 })
 
