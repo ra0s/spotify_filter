@@ -33,6 +33,7 @@ spotifyApi.searchCategory = (category) => {
         .then((data) => {
             console.log('Search tracks by ' + data + ' in the artist name', data.body.tracks.items[0].album.name);
             data.body.tracks.items.forEach( (data)=> {
+                tracklist.push(new Track(data.album.name, data.popularity, data.artists[0].name, data.name, data.uri))
             })
             return tracklist;
         })
