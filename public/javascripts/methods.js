@@ -1,68 +1,42 @@
 const SpotifyWebApi = require('spotify-web-api-node');
+const { Track } = require('../../models/track');
+require('dotenv').config();
 
 var spotifyApi = new SpotifyWebApi({
-    clientId: 'cfce71627486462793a9998a7c46c03a',
-    clientSecret: 'b6e52ba4947b4e8ea700db9423cdba9c',
+    clientId: process.env.CLIENTID,
+    clientSecret: process.env.CLIENTSECRET,
 });
 
+
 spotifyApi.initCredential = function() {
-    spotifyApi.clientCredentialsGrant().then(
+    spotifyApi.clientCredentialsGrant()
+    .then(
         function (data) {
             console.log('The access token expires in ' + data.body['expires_in']);
             console.log('The access token is ' + data.body['access_token']);
 
             // Save the access token so that it's used in future calls
             spotifyApi.setAccessToken(data.body['access_token']);
-            // this.accessToken = data.body['access_token'];
-        },
-        function (err) {
-            console.log(
-                'Something went wrong when retrieving an access token',
-                err.message
-            );
-        }
-    ).then(function(){
-        spotifyApi.getCategories({
-            limit: 50,
-            offset: 0,
-            country: 'US',
-
         })
-            // .then(function (data) {
-            //     // console.log(data.body.categories.items[0].name);
-            //     // return data.body.categories.items;
-            //     data.body.categories.items.forEach(function (songs) {
-            //         console.log(songs.name)
-            //     })
-            // });
-    })
-    // .then(function(data){
-    //    data.forEach(function(songs){
-    //         console.log(songs.name + '\n')
-    //    })
-    // })
-    // .then(function(data){
-    //     spotifyApi.getCategory(data, {
-    //         country: 'US',
-    //     })
-    //         .then(function (data) {
-    //             console.log(data.body);
-    //         }, function (err) {
-    //             console.log("Something went wrong!", err);
-    //         });
-    // })
-    // .catch(
-    //     console.log('error in initCredential function')
-    // )
+        .catch( function(err) {
+            console.log(err)
+        })
 }
 
-spotifyApi.searchCategory = (category) =>{
-    spotifyApi.searchTracks('genre:' + category)
-        .then(function (data) {
-            console.log('Search tracks by ' + data + ' in the artist name', data.body.tracks);
-        }, function (err) {
-            console.log('Something went wrong!', err);
+spotifyApi.searchCategory = (category) => {
+    const tracklist = [];
+    return spotifyApi.searchTracks('genre:' + category)
+        .then((data) => {
+            console.log('Search tracks by ' + data + ' in the artist name', data.body.tracks.items[0].album.name);
+            data.body.tracks.items.forEach( (data)=> {
+                tracklist.push(new Track(data.album.name))
+            })
+            console.log(tracklist)
+            return tracklist;
+        })
+        .catch((err) =>{
+            console.log(err);
         });
 }
 
-exports.data = spotifyApi;
+exports.spotifyApi = spotifyApi;
