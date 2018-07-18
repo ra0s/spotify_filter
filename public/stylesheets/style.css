@@ -86,6 +86,7 @@ h2{
 
 .dropdown{
   color: white;
+
   background-color: #008080;
   border: #008080;
   width: 300px;
@@ -106,4 +107,12 @@ h1 {
 
 .genreForm {
   display: flex;
+
+img {
+  width: 250px;
+  length: 250px;
+}
+
+.buttoncolor {
+  color: #008080;
 }

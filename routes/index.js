@@ -4,7 +4,7 @@ const spotify = require('../public/javascripts/methods');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  spotify.data.initCredential();
+  spotify.spotifyApi.initCredential();
   res.render('index');
 });
 
@@ -13,18 +13,12 @@ router.get('/results', function(req, res, next){
 });
 router.get('/categories', function(req, res){
   console.log(req.query.categories)
-  // req.query.categories;
-  spotify.data.searchCategory(req.query.categories);
-  res.redirect('/')
-});
+  spotify.spotifyApi.searchCategory(req.query.categories)
+  .then(function(result) {
+    console.log(result); 
+    res.redirect('/')
+  } )
+})
 
-// CountTo100(){
-//   let numbers[100];
-//   for (let i = 0; i < 100; i++) {
-//     let n = 1;
-//     numbers[i] = n;
-//     n++;
-//   }
-// }
 
 module.exports = router;
