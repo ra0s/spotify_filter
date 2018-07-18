@@ -3,7 +3,7 @@ const imageChanged = document.getElementById("cover-art");
 const imageEnlarged = document.getElementById("cover-art2");
 
 const cardReject = document.getElementById("card-track");
-const cardReject = document.getElementById("card-track2");
+const cardRejectTwo = document.getElementById("card-track2");
 
 
   function acceptImage(){
@@ -16,4 +16,5 @@ const cardReject = document.getElementById("card-track2");
   function rejectImage(){
     // imageChanged.classList.add("scale-out");
     cardReject.classList.add("scale-out");
+    
   }
