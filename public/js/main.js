@@ -3,6 +3,8 @@ const imageChanged = document.getElementById("cover-art");
 const imageEnlarged = document.getElementById("cover-art2");
 
 const cardReject = document.getElementById("card-track");
+const cardReject = document.getElementById("card-track2");
+
 
   function acceptImage(){
     document.getElementById("cover-art").style.transition="20s";

@@ -32,6 +32,14 @@ img {
     left: 50%;
     transform: translate(-50%, 0);
 }
+.card-panel{
+  width: 350px;
+  margin-top: 30px;
+
+  position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
 
 
 .card .card-content{
@@ -79,7 +87,7 @@ img {
 
 .buttonStyles{
   position: absolute;
-    bottom: 170px;
+    bottom: 140px;
 
 }
 
