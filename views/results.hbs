@@ -1,10 +1,9 @@
 <head>
   <title>Face The Music</title>
-  <link rel="stylesheet" type="text/css" href="stylesheets/style.css" />
+  <link rel="stylesheet" type="text/css" href="stylesheets/styleResults.css" />
 </head>
 
 <body>
-<<<<<<< HEAD
 
   <header>
     <div class="row">
@@ -20,28 +19,31 @@
 <!--  BODY -->
   <div class="grey lighten-4 second-section">
     <div class="row">
-
-        <div class="col s8 center left-column">
-          
+      <div class="col s12 cardsDisplay">
+        <!-- <div class="col s8 center left-column"> -->
+{{#each tracklist}}
                 <div class="card-panel scale-transition z-depth-2" id="card-track">
-                    <iframe src="https://open.spotify.com/embed?uri=spotify:track:7FcN74qp11KkNO0Xd7WMxU" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                    <iframe src='https://open.spotify.com/embed?uri={{this.uri}}' width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
                   </div>
-                  <div class="card-panel scale-transition z-depth-2" id="card-track2">
+                   <!--<div class="card-panel scale-transition z-depth-2" id="card-track2">
                     <iframe src="https://open.spotify.com/embed?uri=spotify:track:7vebS6s97IPqq8U7z4cu1B" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
                   </div>
-
-
-      <div class="row">
+                  <div class="card-panel scale-transition z-depth-2" id="card-track3">
+                    <iframe src="https://open.spotify.com/embed?uri=spotify:track:21CBWF1OV9OrAz9votwzVN" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                  </div>
+                -->
+{{/each}}
+      <!-- <div class="row">
         <div class="col s12 center buttonStyles">
 
           <a id="rejectButton" class="btn-floating btn-large waves-effect waves-light grey" onClick="rejectImage()"><i class="material-icons">close</i></a>
           <a id="acceptButton" class="btn-floating btn-large waves-effect waves-light teal" onClick="acceptImage()"><i class="material-icons">check</i></a>
 
         </div>
-        </div>
-</div>
+        </div> -->
+<!-- </div> -->
 
-        <div class="col s4">
+        <!-- <div class="col s4">
           <ul class="collection">
             <li class="collection-item avatar list-header">
               <h1>Music you like</h1>
@@ -79,28 +81,8 @@
               </p>
             </li>
           </ul>
-        </div>
+        </div> -->
       </div>
-=======
-  <div class="container">
-    <div class="row">
-      <div class="col-12">
-        <h1>This is working</h1>
-        <p id="demo" onclick="myFunction()">Click me to change my text color.</p>
-
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-6">
-      <img src="images/sample.jpg" id="cover-art" onClick="changeImage()">
-    </div>
-    </div>
-    <div class="row">
-      <div class="col-6">
-      <button name="accept" onclick="myFunction()" id="button-accept" class="buttoncolor">Accept</button>
-      <button name="reject" id="button-reject" onClick="changeImage()">Reject</button>
-    </div>
-    </div>
->>>>>>> master
+</div>
 
 </body>

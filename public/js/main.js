@@ -1,32 +1,10 @@
+const cardTop = document.getElementById('card-track');
 
-<<<<<<< HEAD
-const imageChanged = document.getElementById("cover-art");
-const imageEnlarged = document.getElementById("cover-art2");
+const cardTop2 = document.getElementById('card-track2');
 
-const cardReject = document.getElementById("card-track");
-const cardRejectTwo = document.getElementById("card-track2");
+console.log('cardTop');
 
-
-  function acceptImage(){
-    document.getElementById("cover-art").style.transition="20s";
-    document.getElementById("cover-art").style.opacity="0.2";
-    imageEnlarged.classList.add("scale-in");
-
-  }
-
-  function rejectImage(){
-    // imageChanged.classList.add("scale-out");
-    cardReject.classList.add("scale-out");
-    
-=======
-
-  function myFunction() {
-      document.getElementById("demo").style.color = "red";
-  }
-
-  function changeImage(){
-    document.getElementById("cover-art").style.opacity="0.2";
-    document.getElementById("cover-art").transition="200ms";
-
->>>>>>> master
-  }
+function rejectImage(){
+  cardTop.classList.add("scale-out");
+    cardTop2.classList.add("scale-out");
+};

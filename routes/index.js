@@ -11,17 +11,14 @@ router.get('/', function(req, res, next) {
 router.get('/results', function(req, res, next){
   res.render('results');
 });
-<<<<<<< HEAD
-=======
+
 router.get('/categories', function(req, res){
   console.log(req.query.categories)
   spotify.spotifyApi.searchCategory(req.query.categories)
   .then(function(result) {
-    console.log(result); 
-    res.redirect('/')
+    console.log(result);
+    res.render('results', {tracklist: result} )
   } )
 })
-
->>>>>>> master
 
 module.exports = router;

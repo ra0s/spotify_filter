@@ -1,0 +1,106 @@
+body {
+  font:  "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+  color: grey;
+  font-weight: bold;
+}
+
+#card-track{
+  z-index: 15;
+}
+
+#card-track2{
+  z-index: 14;
+}
+
+.second-section{
+  margin-top: 5px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.cardsDisplay{
+  display: flex;
+}
+
+img {
+  width: 250px;
+  length: 250px;
+}
+
+.card {
+  width: 300px;
+  length: 300px;
+  margin-top: 30px;
+  align-items: center;
+  position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+.card-panel{
+  width: 350px;
+  margin-top: 30px;
+
+  /* position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0); */
+}
+
+
+.card .card-content{
+  padding: 0px;
+  padding-bottom: 5px;
+}
+.logo{
+  font-size: 2rem;
+  margin-top: 20px;
+  margin-right: 10px;
+  color: white;
+}
+
+.buttoncolor {
+  color: #008080;
+}
+
+.header {
+  color: #008080;
+}
+
+.first-section{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.left-column{
+  position: relative;
+  height: 700px;
+}
+
+.btn-large {
+  margin: 15px;
+}
+
+.row {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.buttonStyles{
+  position: absolute;
+    bottom: 140px;
+
+}
+
+.collection{
+  margin-top: 30px;
+}
