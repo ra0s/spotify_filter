@@ -16,7 +16,7 @@ router.get('/categories', function(req, res){
   spotify.spotifyApi.searchCategory(req.query.categories)
   .then(function(result) {
     console.log(result); 
-    res.redirect('/')
+    res.render('/results');
   } )
 })
 
