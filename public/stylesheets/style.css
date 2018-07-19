@@ -29,7 +29,7 @@ body {
 .third-section{
   display: flex;
   align-items: center;
-  margin-top: 80px;
+  margin-top: 30px;
   justify-content: center;
 }
 
@@ -41,7 +41,7 @@ h1{
 }
 
 h2{
-  font-family: 'Indie Flower', cursive;
+  font-family: 'Montserrat';
   font-size: 5em;
   color: white;
   font-weight: bold;

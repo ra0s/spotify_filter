@@ -20,6 +20,11 @@ h1 {
   flex-wrap: wrap;
 }
 
+nav{
+  position: fixed;
+  background-color: black;
+}
+
 .cardsDisplay{
   display: flex;
   flex-wrap: wrap;
@@ -85,7 +90,7 @@ img {
 }
 
 .row {
-  margin-top: 0px;
+  margin-top: 50px;
   margin-bottom: 0px;
 }
 
@@ -97,4 +102,12 @@ img {
 
 .collection{
   margin-top: 30px;
+}
+
+.load-more{
+  margin: 25px;
+}
+
+button {
+  margin-bottom: 50px;
 }
