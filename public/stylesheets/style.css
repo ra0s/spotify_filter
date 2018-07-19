@@ -40,8 +40,8 @@ h1{
   font-weight: bold;
 }
 
-h2{
-  font-family: 'Indie Flower', cursive;
+h2 {
+  font-family: 'Montserrat';
   font-size: 5em;
   color: white;
   font-weight: bold;
@@ -107,10 +107,11 @@ h1 {
 
 .genreForm {
   display: flex;
+}
 
-img {
+img{
   width: 250px;
-  length: 250px;
+  height: 250px;
 }
 
 .buttoncolor {

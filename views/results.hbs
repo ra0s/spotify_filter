@@ -6,32 +6,25 @@
 <body>
 
   <header>
-    <div class="row">
-      <div class="col s12 black">
-        <div class="first-section">
-          <i class="material-icons logo">play_circle_outline</i>
-          <h1 class="white-text">Spotify Filter</h1>
+    </nav>
+    <div class="navbar-fixed">
+      <nav>
+        <div class="nav-wrapper black first-section">
+          <a href="/" class="white-text"><i class="material-icons logo">play_circle_outline</i>Spotify Filter</a>
         </div>
-      </div>
+      </nav>
     </div>
   </header>
 
 <!--  BODY -->
-  <div class="grey lighten-4 second-section">
+  <div class="grey lighten-4 second-section" >
     <div class="row">
-      <div class="col s12 cardsDisplay">
+      <div class="col s12 cardsDisplay" >
         <!-- <div class="col s8 center left-column"> -->
 {{#each tracklist}}
                 <div class="card-panel scale-transition z-depth-2">
                     <iframe src='https://open.spotify.com/embed?uri={{this.uri}}' width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
                   </div>
-                   <!--<div class="card-panel scale-transition z-depth-2" id="card-track2">
-                    <iframe src="https://open.spotify.com/embed?uri=spotify:track:7vebS6s97IPqq8U7z4cu1B" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-                  </div>
-                  <div class="card-panel scale-transition z-depth-2" id="card-track3">
-                    <iframe src="https://open.spotify.com/embed?uri=spotify:track:21CBWF1OV9OrAz9votwzVN" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-                  </div>
-                -->
 {{/each}}
       <!-- <div class="row">
         <div class="col s12 center buttonStyles">
