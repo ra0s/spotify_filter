@@ -84,6 +84,10 @@ h2 {
   background-color: #5b5b5b;
 }
 
+.genreAlign{
+  align-items: center;
+}
+
 .dropdown{
   color: white;
 
@@ -116,4 +120,8 @@ img{
 
 .buttoncolor {
   color: #008080;
+}
+
+#content{ 
+  text-shadow: 3px 3px 3px teal;
 }
