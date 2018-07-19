@@ -48,7 +48,7 @@ img {
   width: 350px;
   margin-top: 30px;
   margin-left: 4px;
-
+  height: 430px;
   /* position: absolute;
     left: 50%;
     transform: translate(-50%, 0); */
@@ -90,7 +90,6 @@ img {
 }
 
 .row {
-  margin-top: 50px;
   margin-bottom: 0px;
 }
 
@@ -109,5 +108,28 @@ img {
 }
 
 button {
-  margin-bottom: 50px;
+  margin: 50px;
+}
+
+.btn-floating.halfway-fab{
+  position: relative;
+  top: -80px;
+  right: -229px;
+
+}
+iframe{
+  padding: 12px;
+}
+
+.btn-floating.btn-large i {
+    line-height: 70px;
+}
+
+.btn-large i {
+    font-size: 2.3rem;
+}
+
+.btn-floating.btn-large {
+    width: 70px;
+    height: 70px;
 }
