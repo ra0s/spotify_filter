@@ -46,17 +46,21 @@ spotifyApi.findTracks = (category, pop) => {
     let count = 0;
     let os = 0;
     if(pop == 40)
-        os = 1500;
+        os = 2000;
+    if(pop == 65)
+        os = 750;
+    if(pop == 80)
+        os = 100;
 
     return recursive(tracklist, category, os, pop, count);
 }
    
 function recursive(arr, category, os, pop, count){
-    return spotifyApi.searchTracks('genre:' + category, { limit: 50, offset: os, time_range: 'medium_term'})
+    return spotifyApi.searchTracks('genre:' + category, { limit: 50, offset: os, time_range: 'short_term'})
     .then((data) => {
         data.body.tracks.items.forEach((data) => {
             if (data.popularity <= pop)
-            arr.push(new Track(data.album.name, data.popularity, data.artists[0].name, data.name, data.uri))
+            arr.push(new Track(data.album.name, data.popularity, data.artists[0].name, data.name, data.id))
         })
         console.log(arr.length)
         return arr;
@@ -64,10 +68,10 @@ function recursive(arr, category, os, pop, count){
     .then((data) =>{
         count++;
         console.log("THIS IS COUNT: " + count);
-        if(arr.length < 50 && count < 20){
+        if(arr.length < 50 && count < 30){
             return recursive(arr, category, os+50, pop, count);
         }else{
-            return arr;
+            return shuffle(arr);
         }
     })
     .catch( (err) => { console.log(err)});
@@ -89,7 +93,12 @@ function shuffle(array) {
         array[randomIndex] = temporaryValue;
     }
     const tracklist = [];
-    for( let i = 0; i < 12; i++)
+    let x = 0;
+    if(array.length < 20)
+        x = 20;
+    else
+        x = array.length;
+    for( let i = 0; i < x; i++)
     {
         tracklist.push(array[i]);
     }

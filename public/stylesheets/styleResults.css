@@ -179,3 +179,8 @@ p{
   align-items: center;
   font-size: 2em;
 }
+
+#search-again {
+  top: -35px;
+  margin-right: -5px;
+}
