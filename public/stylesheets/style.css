@@ -46,7 +46,7 @@ h1{
 }
 
 h2 {
-  font-family: 'Montserrat';
+  font-family: 'Montserrat', sans-serif;
   font-size: 5em;
   color: white;
   font-weight: bold;
@@ -96,6 +96,8 @@ h2 {
 
 .modal{
   width: 70%;
+  max-height: 80%;
+  border-radius: 10px;
 }
 
 .popularityButton{
@@ -111,11 +113,6 @@ h2 {
 .popularityButton:hover{
   background-color: white;
   color: #2e2e2e;
-}
-
-.modalFooter{
-  background-color: #2e2e2e !important;
-  height: 100px;
 }
 
 .popupButtonsPopularitySection{
@@ -160,13 +157,13 @@ h2 {
   height: 50px;
 }
 
-select {
+.legend{
   display: flex;
-}
-
-h1 {
-  text-align: center;
-
+  justify-content: center;
+  color: white;
+  background-color: #2e2e2e;
+  padding: 5px;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .submit{
@@ -181,76 +178,29 @@ h1 {
   display: flex;
 }
 
-img{
-  width: 250px;
-  height: 250px;
-}
-
 .buttoncolor {
   color: #008080;
 }
 
-.free-label{
-  border: 2px;
-  border-color: red;
-}
-
 /* copy paste ====================================*/
 
-
-/* utilizado ============================ */
-.four { width: 32.26%; max-width: 32.26%;}
-
-/* utilizado ========================= */
-/* COLUMNS */
-
-/* .col {
-  display: block;
-  float:left;
-  margin: 1% 0 1% 1.6%;
-} */
-
-.col:first-of-type { margin-left: 0; }
-
-/* utilizado ========================= */
-/* CLEARFIX */
-
-
-.cf:before,
-.cf:after {
-    content: " ";
-    display: table;
-} */
-
-.cf:after {
-    clear: both;
-}
-
-.cf {
-    *zoom: 1;
-}
-
-/* FORM */
-
-.plan{
+/* .plan{
   display: flex;
-  justify-content: flex-end;
-}
-
-.plan input{
-	display: none;
+  justify-content: space-around;
 }
 
 .plan input:checked + label{
-	border: 3px solid #333;
-  fondo de los botones ========================
-	background-color: #2fcc71;
+	border: 3px solid white;
+} */
+
+label {
+  background-color: #5d5d5d;
+  height: 30px;
+  width: 150px;
 }
 
-label{
+/* label{
   color: white;
   text-align: center;
-  height:
-  line-height;
-  background-color: #5d5d5d;
-}
+  line-height: 1;
+} */
