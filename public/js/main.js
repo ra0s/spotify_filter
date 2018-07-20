@@ -15,13 +15,13 @@ var addSongToList = function() {
   console.log(uri);
 
   var htmlToInsert =
-    '<a class="collection-item avatar song-item" onclick="removeItem()">\n' +
+    '<a class="collection-item avatar song-item">\n' +
     '<img src="images/yuna.jpg" alt="" class="circle">\n' +
     '<i class="material-icons circle">music_note</i>\n' +
     '<span class="title"><b>'+ songName+'</b></span>\n' +
     '<p>'+artistName+ '<br></p>\n' +
     '<p class="grey-text">'+albumName+'</p>\n' +
-    '<i class="secondary-content material-icons" id= "button-remove">remove_circle</i>\n'+
+    '<i class="secondary-content material-icons" id= "button-remove" onclick="removeItem()">remove_circle</i>\n'+
     '</a>';
 
   musicList.insertAdjacentHTML('beforeend', htmlToInsert);
@@ -43,7 +43,11 @@ for (var i = 0; i < allAddButtons.length; i++) {
   allAddButtons[i].addEventListener('click', addSongToList, false);
 }
 
+
 function removeItem(){
-  (event.currentTarget).remove();
-}
+     var target = event.target;
+     var parent = target.parentElement;
+     (parent).remove();
+
+ }
 

@@ -95,9 +95,9 @@ function shuffle(array) {
     const tracklist = [];
     let x = 0;
     if(array.length < 20)
-        x = 20;
-    else
         x = array.length;
+    else
+        x = 20;
     for( let i = 0; i < x; i++)
     {
         tracklist.push(array[i]);

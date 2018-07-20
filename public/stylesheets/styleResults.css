@@ -197,6 +197,9 @@ color: #383838;
 }
 #search-again {
   top: -35px;
-  margin-right: -5px;
+  margin-right: 8px;
+  background-color: teal;
+}
+nav ul a:hover{
   background-color: teal;
 }
