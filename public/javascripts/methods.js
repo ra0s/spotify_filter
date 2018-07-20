@@ -54,7 +54,7 @@ spotifyApi.findTracks = (category, pop) => {
 
     return recursive(tracklist, category, os, pop, count);
 }
-   
+
 function recursive(arr, category, os, pop, count){
     return spotifyApi.searchTracks('genre:' + category, { limit: 50, offset: os, time_range: 'short_term'})
     .then((data) => {
@@ -107,4 +107,3 @@ function shuffle(array) {
  }
 
 exports.spotifyApi = spotifyApi;
-
