@@ -20,6 +20,12 @@ h1 {
   flex-wrap: wrap;
 }
 
+nav{
+  position: fixed;
+  background-color: black;
+
+}
+
 .cardsDisplay{
   display: flex;
   flex-wrap: wrap;
@@ -42,9 +48,12 @@ img {
 
 .card-panel{
   width: 350px;
+  margin-left: 17px;
+  height: 430px;
   margin: 10px auto;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
+
 }
 
 .card-panel:hover {
@@ -85,7 +94,6 @@ img {
 }
 
 .row {
-  margin-top: 0px;
   margin-bottom: 0px;
 }
 
@@ -96,7 +104,74 @@ img {
 }
 
 .collection{
-  margin-top: 30px;
+  margin-top: 62px;
+}
+
+.load-more{
+  margin: 25px;
+}
+
+button {
+  margin: 50px;
+}
+
+.btn-floating.halfway-fab{
+  position: relative;
+  top: -80px;
+  right: -229px;
+
+}
+iframe{
+  padding: 12px;
+}
+
+.btn-floating.btn-large i {
+    line-height: 70px;
+}
+
+.btn-large i {
+    font-size: 2.3rem;
+}
+
+.btn-floating.btn-large {
+    width: 70px;
+    height: 70px;
+}
+
+.sidenav{
+  z-index: 99;
+}
+
+main {
+      padding-left: 300px;
+    }
+
+    @media only screen and (max-width : 992px) {
+      header, main {
+        padding-left: 0;
+      }
+    }
+
+#list-header{
+  background-color: black;
+  padding-left: 25px;
+}
+
+
+h5{
+  font-weight: 200;
+}
+
+.collection .collection-item.avatar i.circle {
+  background-color: black;
+}
+
+p{
+  font-size: 13px;
+}
+
+#playlist-description{
+  position: absolute;
 }
 
 .white-text{

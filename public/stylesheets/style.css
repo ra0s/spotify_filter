@@ -34,7 +34,7 @@ body {
 .third-section{
   display: flex;
   align-items: center;
-  margin-top: 80px;
+  margin-top: 30px;
   justify-content: center;
 }
 
@@ -170,8 +170,9 @@ legend{
   display: flex;
 }
 
-.buttoncolor {
-  color: #008080;
+img{
+  width: 250px;
+  height: 250px;
 }
 
 
@@ -184,4 +185,12 @@ label {
   background-color: #5d5d5d;
   height: 30px;
   width: 150px;
+}
+
+#content{ 
+  text-shadow: 3px 3px 3px teal;
+
+.dropdown {
+  margin: 20px 20px;
+
 }
