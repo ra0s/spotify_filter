@@ -11,9 +11,8 @@
     <div class="nav-wrapper">
       <a href="/" class="brand-logo center"><i class="material-icons">play_circle_outline</i>Spotify Filter</a>
       <ul class="right hide-on-med-and-down">
-        <li><a href="#"><i class="material-icons">search</i></a></li>
-        <li><a href="#"><i class="material-icons">view_module</i></a></li>
-        <li><a http-equiv="refresh"><i class="material-icons" >refresh</i></a></li>
+        <li><button class="waves-effect waves-light btn genreButton" type="submit" id="search-again" name="search"><a href="/">Search Again</a></button></li>
+        <li><a http-equiv="refresh"><i onclick="window.location.reload()" class="material-icons">refresh</i></a></li>
       </ul>
     </div>
   </nav>
@@ -23,7 +22,7 @@
       <div class="sidenav sidenav-fixed">
       <ul class="collection" id ="musiclist">
         <li class="collection-item avatar teal white-text center" id="list-header">
-          <h5>Add to my playlist</h5>
+          <h5>Add to my list</h5>
         </li>
       </ul>
     </div>
@@ -35,7 +34,7 @@
       <div class="col s12 cardsDisplay">
 {{#each tracklist}}
                   <div class="card-panel scale-transition z-depth-2 hoverable">
-                    <iframe src='https://open.spotify.com/embed?uri={{this.uri}}' width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                    <iframe src='https://open.spotify.com/embed?uri=spotify:track:{{this.id}}' width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
                     <a id= "add-button" class="btn-floating btn-large halfway-fab waves-effect waves-light teal" name="{{this.song_name}}" album="{{this.album_name}}" artist="{{this.artist}}"><i class="material-icons">add</i></a>
                   </div>
 {{/each}}
