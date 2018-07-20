@@ -40,6 +40,7 @@ function shuffle(array) {
    return array;
 }
 
+
 spotifyApi.findTracks = (category, pop) => {
     const tracklist = [];
     let count = 0;
@@ -71,6 +72,30 @@ function recursive(arr, category, os, pop, count){
     })
     .catch( (err) => { console.log(err)});
 }
+
+function shuffle(array) {
+    var currentIndex = array.length, temporaryValue, randomIndex;
+ 
+    // While there remain elements to shuffle...
+    while (0 !== currentIndex) {
+ 
+        // Pick a remaining element...
+        randomIndex = Math.floor(Math.random() * currentIndex);
+        currentIndex -= 1;
+ 
+        // And swap it with the current element.
+        temporaryValue = array[currentIndex];
+        array[currentIndex] = array[randomIndex];
+        array[randomIndex] = temporaryValue;
+    }
+    const tracklist = [];
+    for( let i = 0; i < 12; i++)
+    {
+        tracklist.push(array[i]);
+    }
+ 
+    return tracklist;
+ }
 
 exports.spotifyApi = spotifyApi;
 

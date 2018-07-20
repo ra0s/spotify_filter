@@ -15,7 +15,6 @@ router.get('/results', function(req, res, next){
 router.get('/genre', function(req, res){
   console.log('Genre: ' + req.query.genre)
   console.log('Popularity: ' + req.query.pop);
-  // spotify.spotifyApi.combineArray(req.query.genre, req.query.pop)
   spotify.spotifyApi.findTracks(req.query.genre, req.query.pop)
   .then(function(result) {
     res.render('results', {tracklist: result} )
