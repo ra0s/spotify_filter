@@ -6,7 +6,7 @@
 </div>
 
 <div class="second-section center">
-    <h2>Discover New Music</h2>
+  <h2 id="content">Discover New Music</h2>
 </div>
 
 <div class="row">
@@ -34,9 +34,9 @@
     </div> -->
 
     <!-- genre new button -->
-    <form class="genreForm" action="/categories" method="GET">
-        <select class="dropdown" name="categories" id="inputCategories">
-            <option class="dropdown"value="" disabled selected>Choose your genre</option>
+    <form class="genreForm genreAlign" action="/genre" method="GET">
+        <select class="dropdown" name="genre" id="inputGenre">
+            <option class="dropdown" value="" disabled selected>Choose your genre</option>
             <option value="Blues">Blues</option>
             <option value="Classical">Classical</option>
             <option value="comedy">Comedy</option>
@@ -58,6 +58,14 @@
             <option value="Reggae">Reggae</option>
             <option value="Rock">Rock</option>
             <option value="Soul">Soul</option>
+        </select>
+
+        <select class="dropdown" name="pop" id="inputPop">
+            <option class="dropdown" value="" disabled selected>Choose the popularity</option>
+            <option value="100">I don't care</option>
+            <option value="80">Somewhat Well Known</option>
+            <option value="60">Unpopular songs</option>
+            <option value="40">Unknown</option>
         </select>
         <!-- submit button -->
         <button class="btn-floating btn-large waves-effect waves-light submit" type="submit" name="button"><i class="material-icons" id="submitIcon">arrow_forward</i></button>
