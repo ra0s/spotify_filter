@@ -21,29 +21,6 @@ spotifyApi.initCredential = function() {
            console.log(err)
        })
 }
-
-// spotifyApi.findTracks = (category, pop, offset) => {
-//    const tracklist = [];
-//    let os = 0 + offset;
-//    if(pop == 80)
-//         os += 50;
-//     if(pop == 60)
-//         os += 400;
-//     if(pop == 40)
-//         os += 1000;
-//    return spotifyApi.searchTracks('genre:' + category, {limit: 50, offset: os, time_range: 'long_term'})
-//        .then((data) => {
-//            data.body.tracks.items.forEach( (data)=> {
-//                if(data.popularity <= pop)
-//                tracklist.push(new Track(data.album.name, data.popularity, data.artists[0].name, data.name, data.uri))
-//            })
-//            return shuffle(tracklist);
-//        })
-//        .catch((err) =>{
-//            console.log(err);
-//        });
-// }
-
 function shuffle(array) {
    var currentIndex = array.length, temporaryValue, randomIndex;
 
@@ -96,3 +73,4 @@ function recursive(arr, category, os, pop, count){
 }
 
 exports.spotifyApi = spotifyApi;
+
