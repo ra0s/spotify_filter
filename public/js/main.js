@@ -43,3 +43,7 @@ for (var i = 0; i < allAddButtons.length; i++) {
   allAddButtons[i].addEventListener('click', addSongToList, false);
 }
 
+function removeItem(){
+  (event.currentTarget).remove();
+}
+
