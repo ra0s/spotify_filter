@@ -58,30 +58,16 @@ h2 {
   margin: 0 10px;
 }
 
-#submitIcon{
-  color: black;
-}
-
-#submitIcon:hover{
-  color: white;
-}
-
-#popularity{
+.submitButton{
+  margin: 10px;
   background-color: #008080;
-  transition: 200ms;
+  position: absolute;
+  right: 5px;
 }
 
-#popularity:hover{
-  background-color: #009696;
-}
 
-#genre{
-  background-color: #3b3b3b;
-  transition: 200ms;
-}
-
-#genre:hover{
-  background-color: #5b5b5b;
+#submitIcon{
+  color: white;
 }
 
 .filterButton{
@@ -104,12 +90,14 @@ h2 {
 .popularityButton{
   background-color: #008080;
   width: 170px;
-  height: 30px;
+  height: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 5px;
   color: white;
+  margin: 10px 10px;
+
 }
 
 .popularityButton:hover{
@@ -120,8 +108,9 @@ h2 {
 .popupButtonsPopularitySection{
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
   background-color: #2e2e2e;
+  flex-wrap: wrap;
 }
 
 .popupButtonsGenreSection{
@@ -130,6 +119,7 @@ h2 {
   align-items: center;
   justify-content: center;
   background-color: #2e2e2e;
+  padding-bottom: 0px;
 }
 
 .genreButton{
@@ -145,7 +135,6 @@ h2 {
 }
 
 .genreButton:hover{
-  /* color: white; */
   color: #2e2e2e;
   background-color: white;
 }
@@ -156,16 +145,26 @@ h2 {
 }
 
 .legend{
-  display: flex;
+  display: grid;
   justify-content: center;
   color: white;
   background-color: #2e2e2e;
+
+}
+
+legend{
   padding: 5px;
   font-family: 'Montserrat', sans-serif;
   font-size: 2em;
   font-weight: bold;
 }
 
+.p{
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  color: #696766;
+}
 
 .genreForm {
   display: flex;
@@ -175,16 +174,6 @@ h2 {
   color: #008080;
 }
 
-/* copy paste ====================================*/
-
-/* .plan{
-  display: flex;
-  justify-content: space-around;
-}
-
-.plan input:checked + label{
-	border: 3px solid white;
-} */
 
 input:checked + label{
   color: #2e2e2e;
@@ -196,9 +185,3 @@ label {
   height: 30px;
   width: 150px;
 }
-
-/* label{
-  color: white;
-  text-align: center;
-  line-height: 1;
-} */
