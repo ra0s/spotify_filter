@@ -46,8 +46,7 @@ img {
 }
 .card-panel{
   width: 350px;
-  margin-top: 30px;
-  margin-left: 4px;
+  margin-left: 17px;
   height: 430px;
   /* position: absolute;
     left: 50%;
@@ -100,7 +99,7 @@ img {
 }
 
 .collection{
-  margin-top: 30px;
+  margin-top: 62px;
 }
 
 .load-more{
@@ -132,4 +131,39 @@ iframe{
 .btn-floating.btn-large {
     width: 70px;
     height: 70px;
+}
+
+.sidenav{
+  z-index: 99;
+}
+
+main {
+      padding-left: 300px;
+    }
+
+    @media only screen and (max-width : 992px) {
+      header, main {
+        padding-left: 0;
+      }
+    }
+
+#list-header{
+  background-color: black;
+  padding-left: 25px;
+}
+
+h5{
+  font-weight: 200;
+}
+
+.collection .collection-item.avatar i.circle {
+  background-color: black;
+}
+
+p{
+  font-size: 13px;
+}
+
+#playlist-description{
+  position: absolute;
 }
