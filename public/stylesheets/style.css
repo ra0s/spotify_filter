@@ -187,7 +187,13 @@ label {
   width: 150px;
 }
 
-#content{ 
+label {
+  background-color: #5d5d5d;
+  height: 30px;
+  width: 150px;
+}
+
+#content{
   text-shadow: 3px 3px 3px teal;
 
 }
