@@ -64,28 +64,35 @@ function shuffle(array) {
 }
 
 spotifyApi.findTracks = (category, pop) => {
-    const tracklist = []; 
+    const tracklist = [];
+    let count = 0;
     let os = 0;
-    return recursive(tracklist, category, os, pop);
+    if(pop == 40)
+        os = 1500;
+
+    return recursive(tracklist, category, os, pop, count);
 }
    
-function recursive(arr, category, os, pop){
-    return spotifyApi.searchTracks('genre:' + category, { limit: 50, offset: os, time_range: 'long_term'})
+function recursive(arr, category, os, pop, count){
+    return spotifyApi.searchTracks('genre:' + category, { limit: 50, offset: os, time_range: 'medium_term'})
     .then((data) => {
         data.body.tracks.items.forEach((data) => {
-            if (data.popularity < pop)
+            if (data.popularity <= pop)
             arr.push(new Track(data.album.name, data.popularity, data.artists[0].name, data.name, data.uri))
         })
         console.log(arr.length)
         return arr;
     })
     .then((data) =>{
-        if(arr.length < 50){
-            return recursive(arr, category, os+50);
+        count++;
+        console.log("THIS IS COUNT: " + count);
+        if(arr.length < 50 && count < 20){
+            return recursive(arr, category, os+50, pop, count);
         }else{
             return arr;
         }
     })
+    .catch( (err) => { console.log(err)});
 }
 
 exports.spotifyApi = spotifyApi;
