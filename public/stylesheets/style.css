@@ -1,5 +1,5 @@
 /* color pallete:
-teal: #008080
+teal: #008080, #26a69a
 black: #2e2e2e
 grey: #5d5d5d */
 
@@ -84,7 +84,7 @@ h2 {
   background-color: #5b5b5b;
 }
 
-.genreSubmitButton{
+.filterButton{
   width: 300px;
   height: 50px;
   background-color: #008080;
@@ -98,16 +98,18 @@ h2 {
   width: 70%;
   max-height: 80%;
   border-radius: 10px;
+  background-color: #2e2e2e;
 }
 
 .popularityButton{
-  background-color: #5d5d5d;
+  background-color: #008080;
   width: 170px;
   height: 30px;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 5px;
+  color: white;
 }
 
 .popularityButton:hover{
@@ -137,8 +139,7 @@ h2 {
   display: flex;
   align-items: center;
   justify-content: center;
-  /* background-color: white; */
-  /* color: #2e2e2e; */
+  background-color: #008080;
   border-radius: 5px;
   line-height: 1;
 }
@@ -149,12 +150,9 @@ h2 {
   background-color: white;
 }
 
-.dropdown{
-  color: white;
-  background-color: #008080;
-  border: #008080;
-  width: 300px;
-  height: 50px;
+.genreButton:checked{
+  color: #2e2e2e;
+  background-color: white;
 }
 
 .legend{
@@ -164,15 +162,10 @@ h2 {
   background-color: #2e2e2e;
   padding: 5px;
   font-family: 'Montserrat', sans-serif;
+  font-size: 2em;
+  font-weight: bold;
 }
 
-.submit{
-  background-color: white;
-}
-
-.submit:hover{
-  background-color: #008080;
-}
 
 .genreForm {
   display: flex;
@@ -192,6 +185,11 @@ h2 {
 .plan input:checked + label{
 	border: 3px solid white;
 } */
+
+input:checked + label{
+  color: #2e2e2e;
+  background-color: white;
+}
 
 label {
   background-color: #5d5d5d;
