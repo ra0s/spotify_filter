@@ -1,4 +1,6 @@
 <link rel='stylesheet' href='/stylesheets/style.css' />
+<!-- Bootstrap CSS -->
+<!-- <link rel="stylesheet" href="bootstrap-iso.css"> -->
 
 <div class="first-section">
     <i class="material-icons logo">play_circle_outline</i>
@@ -22,19 +24,8 @@
       <li><a href="#!"><i class="material-icons">cloud</i>five</a></li>
     </ul> -->
 
-
-    <!-- <div class="input-field col s12">
-      <select class="dropdown">
-        <option class="dropdown"value="" disabled selected>Choose your option</option>
-        <option value="1">Option 1</option>
-        <option value="2">Option 2</option>
-        <option value="3">Option 3</option>
-      </select>
-      <label>Materialize Select</label>
-    </div> -->
-
     <!-- genre new button -->
-    <form class="genreForm" action="/genre" method="GET">
+    <!-- <form class="genreForm" action="/genre" method="GET">
         <select class="dropdown" name="genre" id="inputGenre">
             <option class="dropdown" value="" disabled selected>Choose your genre</option>
             <option value="Blues">Blues</option>
@@ -59,30 +50,64 @@
             <option value="Rock">Rock</option>
             <option value="Soul">Soul</option>
         </select>
-        <!-- submit button -->
+        submit button
         <button class="btn-floating btn-large waves-effect waves-light submit" type="submit" name="button"><i class="material-icons" id="submitIcon">arrow_forward</i></button>
-    </form>
+    </form> -->
 
-    <!-- genre button -->
-  <!-- <ul id='dropdown1' class='dropdown-content'>
-    <li class="optionDropDown" value="Blues">Blues</li>
-    <li class="optionDropDown" value="Christian">Christian</li>
-    <li class="optionDropDown" value="Classical">Classical</li>
-    <li class="optionDropDown" value="Comedy">Comedy</li>
-    <li class="optionDropDown" value="Country">Country</li>
-    <li class="optionDropDown" value="Dance/Electronic">EDM</li>
-    <li class="optionDropDown" value="Desi">Desi</li>
-    <li class="optionDropDown" value="Folk & optioncoustic">Folk & Acoustic</li>
-    <li class="optionDropDown" value="Funk">Funk</li>
-    <li class="optionDropDown" value="Hip-Hop">Hip-Hop</li>
-    <li class="optionDropDown" value="Indie">Indie</li>
-    <li class="optionDropDown" value="Jazz">Jazz</li>
-    <li><a href="#!"><i class="material-icons">cloud</i>five</a></li>
-  </ul>
+  <!-- Modal Trigger -->
+  <a class="waves-effect waves-light btn modal-trigger genreSubmitButton" href="#modal1">Choose your genre</a>
 
-  <button class="dropdown-trigger btn-large buttonStyle" id="genre" data-target='dropdown1'>Genre</button> -->
+  <!-- Modal Structure -->
+  <form class="genreForm" action="/genre" method="GET">
+    <div id="modal1" class="modal">
 
-    <!-- <a class='dropdown-trigger btn-large buttonStyle' href='#' id="genre" data-target='dropdown1'>Genre</a> -->
+
+      <div class="modal-content popupButtonsPopularitySection">
+        <button class="waves-effect waves-light btn-large popularityButton radio" for="" type="radio" name="pop" value="Who?">Who?</button>
+
+        <section class="plan cf">
+          <input type="radio" name="pop" id="Who?" value="Who?"><label class="waves-effect waves-light btn-large popularityButton radio free-label four col" for="Who?">Who?</label>
+          <input type="radio" name="pop" id="Kinda known" value="Kinda known" checked><label class="waves-effect waves-light btn-large popularityButton radio basic-label four col" for="Kinda known">Kinda known</label>
+          <input type="radio" name="pop" id="Balance" value="Balance"><label class="waves-effect waves-light btn-large popularityButton radio premium-label four col" for="Balance">Balance</label>
+          <input type="radio" name="pop" id="Popular" value="Popular"><label class="waves-effect waves-light btn-large popularityButton radio premium-label four col" for="Popular">Popular</label>
+
+        </section>
+<!--
+        <a name="pop" value="Who?" class="waves-effect waves-light btn-large popularityButton">Who?</a>
+        <a class="waves-effect waves-light btn-large popularityButton">Kinda known</a>
+        <a class="waves-effect waves-light btn-large popularityButton">Balance</a>
+        <a class="waves-effect waves-light btn-large popularityButton">Popular</a> -->
+      </div>
+      <div class="modal-content popupButtonsGenreSection">
+        <button class="waves-effect waves-light btn-large genreButton" type="submit" name="genre" value="Blues">Blues</button>
+        <button class="waves-effect waves-light btn-large genreButton" type="submit" name="genre" value="Classical">Classical</button>
+        <button class="waves-effect waves-light btn-large genreButton" type="submit" name="genre" value="comedy">Comedy</button>
+        <button class="waves-effect waves-light btn-large genreButton" type="submit" name="genre" value="Country">Country</button>
+        <button class="waves-effect waves-light btn-large genreButton" type="submit" name="genre" value="EDM">EDM</button>
+        <button class="waves-effect waves-light btn-large genreButton" type="submit" name="genre" value="Desi">Desi</button>
+        <button class="waves-effect waves-light btn-large genreButton" type="submit" name="genre" value="Folk & Acoustic">Folk & Acoustic</button>
+        <button class="waves-effect waves-light btn-large genreButton" type="submit" name="genre" value="Funk">Funk</button>
+        <button class="waves-effect waves-light btn-large genreButton" type="submit" name="genre" value="Gospel">Gospel</button>
+        <button class="waves-effect waves-light btn-large genreButton" type="submit" name="genre" value="Hip-Hop">Hip-Hop</button>
+        <button class="waves-effect waves-light btn-large genreButton" type="submit" name="genre" value="indie-pop">Indie</button>
+        <button class="waves-effect waves-light btn-large genreButton" type="submit" name="genre" value="Jazz">Jazz</button>
+        <button class="waves-effect waves-light btn-large genreButton" type="submit" name="genre" value="K-Pop">K-Pop</button>
+        <button class="waves-effect waves-light btn-large genreButton" type="submit" name="genre" value="Latin">Latin</button>
+        <button class="waves-effect waves-light btn-large genreButton" type="submit" name="genre" value="Metal">Metal</button>
+        <button class="waves-effect waves-light btn-large genreButton" type="submit" name="genre" value="Pop">Pop</button>
+        <button class="waves-effect waves-light btn-large genreButton" type="submit" name="genre" value="Punk">Punk</button>
+        <button class="waves-effect waves-light btn-large genreButton" type="submit" name="genre" value="R&B">R&B</button>
+        <button class="waves-effect waves-light btn-large genreButton" type="submit" name="genre" value="Reggae">Reggae</button>
+        <button class="waves-effect waves-light btn-large genreButton" type="submit" name="genre" value="Rock">Rock</button>
+        <button class="waves-effect waves-light btn-large genreButton" type="submit" name="genre" value="Soul">Soul</button>
+      </div>
+      <!-- <div class="modal-footer modalFooter">
+        <button class="btn-floating btn-large waves-effect waves-light submit" type="submit" name="button"><i class="material-icons" id="submitIcon">arrow_forward</i></button>
+      </div> -->
+    </div>
+  </form>
+
+
 
 
   </div>

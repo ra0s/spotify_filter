@@ -14,6 +14,7 @@ router.get('/results', function(req, res, next){
 
 router.get('/genre', function(req, res){
   console.log(req.query.genre)
+  console.log(req.query.pop)
   spotify.spotifyApi.findTracks(req.query.genre)
   .then(function(result) {
     console.log("THIS IS THE TRACKLIST\n" + result[0].album_name);

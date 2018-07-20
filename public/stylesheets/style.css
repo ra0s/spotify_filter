@@ -1,3 +1,8 @@
+/* color pallete:
+teal: #008080
+black: #2e2e2e
+grey: #5d5d5d */
+
 body {
   padding: 20px;
   background-image: url("../images/background.jpg");
@@ -53,11 +58,6 @@ h2 {
   margin: 0 10px;
 }
 
-.submit{
-  background-color: white;
-  margin: 0 10px;
-}
-
 #submitIcon{
   color: black;
 }
@@ -84,9 +84,76 @@ h2 {
   background-color: #5b5b5b;
 }
 
+.genreSubmitButton{
+  width: 300px;
+  height: 50px;
+  background-color: #008080;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal{
+  width: 70%;
+}
+
+.popularityButton{
+  background-color: #5d5d5d;
+  width: 170px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+}
+
+.popularityButton:hover{
+  background-color: white;
+  color: #2e2e2e;
+}
+
+.modalFooter{
+  background-color: #2e2e2e !important;
+  height: 100px;
+}
+
+.popupButtonsPopularitySection{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #2e2e2e;
+}
+
+.popupButtonsGenreSection{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  background-color: #2e2e2e;
+}
+
+.genreButton{
+  margin: 10px 10px;
+  width: 150px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: white; */
+  /* color: #2e2e2e; */
+  border-radius: 5px;
+  line-height: 1;
+}
+
+.genreButton:hover{
+  /* color: white; */
+  color: #2e2e2e;
+  background-color: white;
+}
+
 .dropdown{
   color: white;
-
   background-color: #008080;
   border: #008080;
   width: 300px;
@@ -101,6 +168,11 @@ h1 {
   text-align: center;
 
 }
+
+.submit{
+  background-color: white;
+}
+
 .submit:hover{
   background-color: #008080;
 }
@@ -116,4 +188,69 @@ img{
 
 .buttoncolor {
   color: #008080;
+}
+
+.free-label{
+  border: 2px;
+  border-color: red;
+}
+
+/* copy paste ====================================*/
+
+
+/* utilizado ============================ */
+.four { width: 32.26%; max-width: 32.26%;}
+
+/* utilizado ========================= */
+/* COLUMNS */
+
+/* .col {
+  display: block;
+  float:left;
+  margin: 1% 0 1% 1.6%;
+} */
+
+.col:first-of-type { margin-left: 0; }
+
+/* utilizado ========================= */
+/* CLEARFIX */
+
+
+.cf:before,
+.cf:after {
+    content: " ";
+    display: table;
+} */
+
+.cf:after {
+    clear: both;
+}
+
+.cf {
+    *zoom: 1;
+}
+
+/* FORM */
+
+.plan{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.plan input{
+	display: none;
+}
+
+.plan input:checked + label{
+	border: 3px solid #333;
+  fondo de los botones ========================
+	background-color: #2fcc71;
+}
+
+label{
+  color: white;
+  text-align: center;
+  height:
+  line-height;
+  background-color: #5d5d5d;
 }
