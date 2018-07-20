@@ -105,6 +105,7 @@ img {
 
 .collection{
   margin-top: 62px;
+  border:0px;
 }
 
 .load-more{
@@ -180,6 +181,20 @@ p{
   font-size: 2em;
 }
 
+#button-remove{
+  top: 26px;
+  color: #500000;
+}
+
+.collection a.collection-item {
+color: #383838;
+
+}
+
+#add-playlist-button{
+  margin-left: 110px;
+    margin-top: 8px;
+}
 #search-again {
   top: -35px;
   margin-right: -5px;
