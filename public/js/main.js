@@ -1,4 +1,3 @@
-
 var allAddButtons = document.getElementsByClassName("btn-floating");
 
 var artistList = [];
@@ -38,28 +37,9 @@ var addSongToList = function() {
   console.log(songName);
   console.log(albumName);
 
-
 };
 
 for (var i = 0; i < allAddButtons.length; i++) {
   allAddButtons[i].addEventListener('click', addSongToList, false);
 }
 
-
-var songItems = document.getElementsByClassName("song-item");
-
-// for (var i = 0; i < songItems.length; i++) {
-//   console.log(i);
-//   console.log(songItems[i]);
-//   songItems[i].addEventListener('click', removeItem(), false);
-//   }
-
-  function removeItem(){
-
-// songitems[i].remove();
-    // var itemToRemove = songItems[i];
-    // itemToRemove.remove();
-
-      (event.currentTarget).remove();
-
-  }

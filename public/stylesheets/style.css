@@ -1,5 +1,5 @@
 /* color pallete:
-teal: #008080
+teal: #008080, #26a69a
 black: #2e2e2e
 grey: #5d5d5d */
 
@@ -58,33 +58,19 @@ h2 {
   margin: 0 10px;
 }
 
-#submitIcon{
-  color: black;
+.submitButton{
+  margin: 10px;
+  background-color: #008080;
+  position: absolute;
+  right: 5px;
 }
 
-#submitIcon:hover{
+
+#submitIcon{
   color: white;
 }
 
-#popularity{
-  background-color: #008080;
-  transition: 200ms;
-}
-
-#popularity:hover{
-  background-color: #009696;
-}
-
-#genre{
-  background-color: #3b3b3b;
-  transition: 200ms;
-}
-
-#genre:hover{
-  background-color: #5b5b5b;
-}
-
-.genreSubmitButton{
+.filterButton{
   width: 300px;
   height: 50px;
   background-color: #008080;
@@ -98,16 +84,20 @@ h2 {
   width: 70%;
   max-height: 80%;
   border-radius: 10px;
+  background-color: #2e2e2e;
 }
 
 .popularityButton{
-  background-color: #5d5d5d;
+  background-color: #008080;
   width: 170px;
-  height: 30px;
+  height: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 5px;
+  color: white;
+  margin: 10px 10px;
+
 }
 
 .popularityButton:hover{
@@ -118,8 +108,9 @@ h2 {
 .popupButtonsPopularitySection{
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
   background-color: #2e2e2e;
+  flex-wrap: wrap;
 }
 
 .popupButtonsGenreSection{
@@ -128,6 +119,7 @@ h2 {
   align-items: center;
   justify-content: center;
   background-color: #2e2e2e;
+  padding-bottom: 0px;
 }
 
 .genreButton{
@@ -137,41 +129,41 @@ h2 {
   display: flex;
   align-items: center;
   justify-content: center;
-  /* background-color: white; */
-  /* color: #2e2e2e; */
+  background-color: #008080;
   border-radius: 5px;
   line-height: 1;
 }
 
 .genreButton:hover{
-  /* color: white; */
   color: #2e2e2e;
   background-color: white;
 }
 
-.dropdown{
-  color: white;
-  background-color: #008080;
-  border: #008080;
-  width: 300px;
-  height: 50px;
-}
-
-.legend{
-  display: flex;
-  justify-content: center;
-  color: white;
-  background-color: #2e2e2e;
-  padding: 5px;
-  font-family: 'Montserrat', sans-serif;
-}
-
-.submit{
+.genreButton:checked{
+  color: #2e2e2e;
   background-color: white;
 }
 
-.submit:hover{
-  background-color: #008080;
+.legend{
+  display: grid;
+  justify-content: center;
+  color: white;
+  background-color: #2e2e2e;
+
+}
+
+legend{
+  padding: 5px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.p{
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  color: #696766;
 }
 
 .genreForm {
@@ -183,8 +175,16 @@ img{
   height: 250px;
 }
 
-.buttoncolor {
-  color: #008080;
+
+input:checked + label{
+  color: #2e2e2e;
+  background-color: white;
+}
+
+label {
+  background-color: #5d5d5d;
+  height: 30px;
+  width: 150px;
 }
 
 label {
