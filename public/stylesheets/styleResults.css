@@ -18,7 +18,6 @@ h1 {
   margin-bottom: 30px;
   display: flex;
   flex-wrap: wrap;
-
 }
 
 nav{
@@ -106,6 +105,7 @@ img {
 
 .collection{
   margin-top: 62px;
+  border:0px;
 }
 
 .load-more{
@@ -158,6 +158,7 @@ main {
   padding-left: 25px;
 }
 
+
 h5{
   font-weight: 200;
 }
@@ -178,4 +179,19 @@ p{
   display: flex;
   align-items: center;
   font-size: 2em;
+}
+
+#button-remove{
+  top: 26px;
+  color: #500000;
+}
+
+.collection a.collection-item {
+color: #383838;
+
+}
+
+#add-playlist-button{
+  margin-left: 110px;
+    margin-top: 8px;
 }
