@@ -200,6 +200,11 @@ color: #383838;
   margin-right: 8px;
   background-color: teal;
 }
+
+.searchAgain:hover {
+  background-color: teal;
+}
+
 nav ul a:hover{
   background-color: teal;
 }
