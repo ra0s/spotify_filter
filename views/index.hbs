@@ -1,79 +1,68 @@
+<link rel='stylesheet' href='/stylesheets/style.css' />
+
 <div class="first-section">
     <i class="material-icons logo">play_circle_outline</i>
     <h1>Spotify Filter</h1>
 </div>
 
-<div class="second-section">
-    <h2>Let's Dance</h2>
+<div class="second-section center">
+  <h2 id="content">Discover New Music</h2>
 </div>
 
 <div class="row">
-<div class="col s12 third-section">
-    <a class='dropdown-trigger btn btn-large waves-effect buttonStyle' id="popularity" href='#' data-target='dropdown1'>Popularity</a>
+  <div class="col s12 third-section">
 
-    <ul id='dropdown1' class='dropdown-content'>
-      <li><a href="#!">one</a></li>
-      <li><a href="#!">two</a></li>
-      <li class="divider" tabindex="-1"></li>
-      <li><a href="#!">three</a></li>
-      <li><a href="#!"><i class="material-icons">view_module</i>four</a></li>
-      <li><a href="#!"><i class="material-icons">cloud</i>five</a></li>
-    </ul>
+    <!-- Modal Trigger -->
+    <a class="waves-effect waves-light btn modal-trigger filterButton" href="#modal1">Choose your filters</a>
 
-    <a class='dropdown-trigger btn btn-large waves-effect buttonStyle' id="genre" href='#' data-target='dropdown1'>Genre</a>
+    <!-- Modal Structure -->
+    <form class="genreForm" action="/genre" method="GET">
+      <div id="modal1" class="modal">
 
-    <ul id='dropdown1' class='dropdown-content'>
-      <li><a href="#!">one</a></li>
-      <li><a href="#!">two</a></li>
-      <li class="divider" tabindex="-1"></li>
-      <li><a href="#!">three</a></li>
-      <li><a href="#!"><i class="material-icons">view_module</i>four</a></li>
-      <li><a href="#!"><i class="material-icons">cloud</i>five</a></li>
-    </ul>
+            <div class="legend container">
+              <legend>Popularity:</legend>
+              <p class="p">(Step 1)</p>
+            </div>
 
-    <a class="btn-floating btn-large waves-effect waves-light submit"><i class="material-icons">arrow_forward</i></a>
+            <div class="modal-content popupButtonsPopularitySection">
+              <input type="radio" name="pop" value="40" id="Something New" checked><label class="btn-small popularityButton" for="Something New">Something New</label>
+              <input type="radio" name="pop" value="65" id="Rising"><label class="btn-small popularityButton" for="Rising">Rising</label>
+              <input type="radio" name="pop" value="80" id="Pretty Popular"><label class="btn-small popularityButton" for="Pretty Popular">Pretty Popular</label>
+              <input type="radio" name="pop" value="100" id="Top Hits"><label class="btn-small popularityButton" for="Top Hits">Top Hits</label>´
+            </div>
+
+            <div class="legend container">
+              <legend>Genre:</legend>
+              <p class="p">(Step 2)</p>
+            </div>
+
+            <div class="modal-content popupButtonsGenreSection">
+
+              <input type="radio" name="genre" value="Blues" id="Blues" checked><label class="waves-effect waves-light btn-large genreButton" for="Blues">Blues</label>
+              <input type="radio" name="genre" value="Classical" id="Classical" ><label class="waves-effect waves-light btn-large genreButton" for="Classical">Classical</label>
+              <input type="radio" name="genre" value="Country" id="Country" ><label class="waves-effect waves-light btn-large genreButton" for="Country">Country</label>
+              <input type="radio" name="genre" value="EDM" id="EDM" ><label class="waves-effect waves-light btn-large genreButton" for="EDM">EDM</label>
+              <input type="radio" name="genre" value="Desi" id="Desi" ><label class="waves-effect waves-light btn-large genreButton" for="Desi">Desi</label>
+              <input type="radio" name="genre" value="Folk & Acoustic" id="Folk & Acoustic" ><label class="waves-effect waves-light btn-large genreButton" for="Folk & Acoustic">Folk & Acoustic</label>
+              <input type="radio" name="genre" value="Funk" id="Funk" ><label class="waves-effect waves-light btn-large genreButton" for="Funk">Funk</label>
+              <input type="radio" name="genre" value="Gospel" id="Gospel" ><label class="waves-effect waves-light btn-large genreButton" for="Gospel">Gospel</label>
+              <input type="radio" name="genre" value="Hip-Hop" id="Hip-Hop" ><label class="waves-effect waves-light btn-large genreButton" for="Hip-Hop">Hip-Hop</label>
+              <input type="radio" name="genre" value="indie-pop" id="indie-pop" ><label class="waves-effect waves-light btn-large genreButton" for="indie-pop">Indie</label>
+              <input type="radio" name="genre" value="Jazz" id="Jazz" ><label class="waves-effect waves-light btn-large genreButton" for="Jazz">Jazz</label>
+              <input type="radio" name="genre" value="K-Pop" id="K-Pop" ><label class="waves-effect waves-light btn-large genreButton" for="K-Pop">K-Pop</label>
+              <input type="radio" name="genre" value="Latin" id="Latin" ><label class="waves-effect waves-light btn-large genreButton" for="Latin">Latin</label>
+              <input type="radio" name="genre" value="Metal" id="Metal" ><label class="waves-effect waves-light btn-large genreButton" for="Metal">Metal</label>
+              <input type="radio" name="genre" value="Pop" id="Pop" ><label class="waves-effect waves-light btn-large genreButton" for="Pop">Pop</label>
+              <input type="radio" name="genre" value="Punk" id="Punk" ><label class="waves-effect waves-light btn-large genreButton" for="Punk">Punk</label>
+              <input type="radio" name="genre" value="R&B" id="R&B" ><label class="waves-effect waves-light btn-large genreButton" for="R&B">R&B</label>
+              <input type="radio" name="genre" value="Reggae" id="Reggae" ><label class="waves-effect waves-light btn-large genreButton" for="Reggae">Reggae</label>
+              <input type="radio" name="genre" value="Rock" id="Rock" ><label class="waves-effect waves-light btn-large genreButton" for="Rock">Rock</label>
+              <input type="radio" name="genre" value="Soul" id="Soul" ><label class="waves-effect waves-light btn-large genreButton" for="Soul">Soul</label>
+            </div>
+
+        <button type="submit" name="submitButton" class="btn-floating btn-large waves-effect waves-light submitButton"><i class="material-icons" id="submitIcon">arrow_forward</i></button>
+      </div>
+    </form>
 
   </div>
-
-  <!-- Dropdown Trigger -->
-<a class='dropdown-trigger btn' href='#' data-target='dropdown1'>Drop Me!</a>
-
-<!-- Dropdown Structure -->
-<ul id='dropdown1' class='dropdown-content'>
-  <li><a href="#!">one</a></li>
-  <li><a href="#!">two</a></li>
-  <li class="divider" tabindex="-1"></li>
-  <li><a href="#!">three</a></li>
-  <li><a href="#!"><i class="material-icons">view_module</i>four</a></li>
-  <li><a href="#!"><i class="material-icons">cloud</i>five</a></li>
-</ul>
 </div>
-
-<!-- UNCOMMENT THIS TO TEST SEARCH FUNCTION
-<form action="/categories" method="GET" >
-    <select name="categories" id="inputCategories">
-        <option value="Blues">Blues</option>
-        <option value="Christian">Christian</option>
-        <option value="Classical">Classical</option>
-        <option value="Comedy">Comedy</option>
-        <option value="Country">Country</option>
-        <option value="Dance/Electronic">EDM</option>
-        <option value="Desi">Desi</option>
-        <option value="Folk & optioncoustic">Folk & Acoustic</option>
-        <option value="Funk">Funk</option>
-        <option value="Hip-Hop">Hip-Hop</option>
-        <option value="Indie">Indie</option>
-        <option value="Jazz">Jazz</option>
-        <option value="K-Pop">K-Pop</option>
-        <option value="Latin">Latin</option>
-        <option value="Metal">Metal</option>
-        <option value="Pop">Pop</option>
-        <option value="Punk">Punk</option>
-        <option value="R&B">R&B</option>
-        <option value="Reggae">Reggae</option>
-        <option value="Rock">Rock</option>
-        <option value="Soul">Soul</option>
-    </select>
-    <input type="submit" />
-</form>  
--->
